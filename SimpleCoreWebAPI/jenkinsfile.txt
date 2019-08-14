@@ -1,0 +1,12 @@
+﻿pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'dotnet build CartApp.sln -p:configuration=release -v:n'
+                echo "Building......."
+            }
+        }
+     }
+}
