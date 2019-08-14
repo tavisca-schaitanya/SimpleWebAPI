@@ -4,7 +4,7 @@
     stages {
         stage('Build') {
             steps {
-                sh 'dotnet build CartApp.sln -p:configuration=release -v:n'
+                sh 'dotnet build SimpleCoreWebAPI.sln -p:configuration=release -v:n'
                 echo "Building......."
             }
         }
