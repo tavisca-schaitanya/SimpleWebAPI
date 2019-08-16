@@ -23,4 +23,9 @@ pipeline {
 	    }
 	}
      }
+     post {
+	  success {
+	    	powershell(script: 'docker build -t image1 .')
+	  }
+    }
 }
