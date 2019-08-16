@@ -1,15 +1,9 @@
 pipeline {
     agent any
-    parameters {
-        string(name: 'SOLUTION', description: 'Solution file name to build')
-	string(name: 'DLL', description: 'dll file path')
-	string(name: 'IMAGE_NAME', description: 'docker image name')
-	string(name: 'PORT_NUMBER', description: 'port number to run')
-    }
     stages {
         stage('Build') {
             steps {
-                powershell(script: 'dotnet build $SOLUTION -p:configuration=release -v:n')
+                powershell(script: 'dotnet build')
            
             }
         }
@@ -25,7 +19,7 @@ pipeline {
 	}
 	stage('Archive') {
 	    steps {
-		archiveArtifacts artifacts: '**', fingerprint: true
+		archiveArtifacts artifacts: './bin/Debug/netcoreapp2.1/publish/*', fingerprint: true
 	    }
 	}
      }
