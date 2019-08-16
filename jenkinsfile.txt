@@ -3,6 +3,8 @@ pipeline {
     parameters {
         string(name: 'SOLUTION', description: 'Solution file name to build')
 	string(name: 'DLL', description: 'dll file path')
+	string(name: 'IMAGE_NAME', description: 'docker image name')
+	string(name: 'PORT_NUMBER', description: 'port number to run')
     }
     stages {
         stage('Build') {
@@ -26,6 +28,8 @@ pipeline {
 	success {
 		archiveArtifacts artifacts: '**', fingerprint: true
 		bat "dotnet %DLL%"
+		bat "docker build -t %IMAGE_NAME% ."
+		bat "docker run -p %PORT_NUMBER%:80 %IMAGE_NAME%"
 	}
     }
 }
