@@ -22,7 +22,7 @@ pipeline {
 	}
 	stage('Archive') {
 	    steps {
-		archiveArtifacts artifacts: '${env:PROJECT_NAME}/bin/Debug/netcoreapp2.1/publish/*.*', fingerprint: true
+		powershell(script: "archiveArtifacts artifacts: '${env:PROJECT_NAME}/bin/Debug/netcoreapp2.1/publish/*.*', fingerprint: true")
 	    }
 	}
      }
