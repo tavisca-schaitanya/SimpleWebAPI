@@ -9,26 +9,24 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "dotnet build %params.SOLUTION% -p:configuration=release -v:n"
+                powershell(script: "dotnet build %params.SOLUTION% -p:configuration=release -v:n")
                 echo "Building......."
             }
         }
 	stage('Test') {
 	    steps {
-		bat 'dotnet test'
+		powershell(script: 'dotnet test')
 	    }
 	}
 	stage('Publish') {
 	    steps {
-			bat 'dotnet publish'
+		powershell(script: 'dotnet publish')
+	    }
+	}
+	stage('Archive') {
+	    steps {
+		archiveArtifacts artifacts: '**', fingerprint: true
 	    }
 	}
      }
-     post {
-	success {
-		archiveArtifacts artifacts: '**', fingerprint: true
-		bat "docker build -t %IMAGE_NAME% ."
-		bat "docker run -p %PORT_NUMBER%:80 %IMAGE_NAME%"
-	}
-    }
 }
