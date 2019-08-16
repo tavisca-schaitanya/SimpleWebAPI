@@ -2,11 +2,12 @@ pipeline {
     agent any
     parameters {
         string(name: 'SOLUTION', description: 'Solution file name to build')
+	string(name: 'DLL', description: 'dll file path')
     }
     stages {
         stage('Build') {
             steps {
-                bat 'dotnet build %params.SOLUTION% -p:configuration=release -v:n'
+                bat "dotnet build %params.SOLUTION% -p:configuration=release -v:n"
                 echo "Building......."
             }
         }
@@ -24,7 +25,7 @@ pipeline {
      post {
 	success {
 		archiveArtifacts artifacts: '**', fingerprint: true
-		bat 'dotnet SimpleCoreWebAPI/bin/Debug/netcoreapp2.1/SimpleCoreWebAPI.dll'
+		bat "dotnet %DLL%"
 	}
     }
 }
