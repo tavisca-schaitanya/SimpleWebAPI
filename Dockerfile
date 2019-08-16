@@ -2,5 +2,5 @@
 #For more information, please see https://aka.ms/containercompat
 
 FROM microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1803 AS base
-COPY ./SimpleWebAPI/bin/Debug/netcoreapp2.1/publish .
+COPY ./SimpleCoreWebAPI/bin/Debug/netcoreapp2.1/publish .
 ENTRYPOINT ["dotnet", "SimpleCoreWebAPI.dll"]
