@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    parameters {
+	string(name: 'PROJECT_NAME')
+    }
     stages {
         stage('Build') {
             steps {
@@ -19,7 +22,7 @@ pipeline {
 	}
 	stage('Archive') {
 	    steps {
-		archiveArtifacts artifacts: 'SimpleCoreWebAPI/bin/Debug/netcoreapp2.1/publish/*.*', fingerprint: true
+		archiveArtifacts artifacts: '${env:PROJECT_NAME}/bin/Debug/netcoreapp2.1/publish/*.*', fingerprint: true
 	    }
 	}
      }
