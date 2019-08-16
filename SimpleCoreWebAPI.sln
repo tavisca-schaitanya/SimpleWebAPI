@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCoreWebAPI", "SimpleCoreWebAPI\SimpleCoreWebAPI.csproj", "{CFB95CEA-0843-418D-BB70-7471ED519973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCoreWebAPI", "SimpleCoreWebAPI\SimpleCoreWebAPI.csproj", "{CFB95CEA-0843-418D-BB70-7471ED519973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCoreWebAPI.Tests", "SimpleCoreWebAPI.Tests\SimpleCoreWebAPI.Tests.csproj", "{180B86DD-A43F-4C74-AEA7-B8CF79D4233B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CFB95CEA-0843-418D-BB70-7471ED519973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFB95CEA-0843-418D-BB70-7471ED519973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFB95CEA-0843-418D-BB70-7471ED519973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180B86DD-A43F-4C74-AEA7-B8CF79D4233B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180B86DD-A43F-4C74-AEA7-B8CF79D4233B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180B86DD-A43F-4C74-AEA7-B8CF79D4233B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180B86DD-A43F-4C74-AEA7-B8CF79D4233B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

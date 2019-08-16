@@ -8,6 +8,11 @@
                 echo "Building......."
             }
         }
+	stage('Test') {
+	    steps {
+		bat 'dotnet test'
+	    }
+	}
 	stage('Publish') {
 	    steps {
 			bat 'dotnet publish'
