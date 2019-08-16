@@ -4,9 +4,20 @@
     stages {
         stage('Build') {
             steps {
-                sh 'dotnet build SimpleCoreWebAPI.sln -p:configuration=release -v:n'
+                bat 'dotnet build SimpleCoreWebAPI.sln -p:configuration=release -v:n'
                 echo "Building......."
             }
         }
+	stage('Publish') {
+	    steps {
+			bat 'dotnet publish'
+	    }
+	}
      }
+     post {
+	success {
+		archiveArtifacts artifacts: '**', fingerprint: true
+		bat 'dotnet SimpleCoreWebAPI/bin/Debug/netcoreapp2.1/SimpleCoreWebAPI.dll'
+	}
+    }
 }
