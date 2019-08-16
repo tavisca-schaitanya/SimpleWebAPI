@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                powershell(script: "dotnet build %params.SOLUTION% -p:configuration=release -v:n")
-                echo "Building......."
+                powershell(script: 'dotnet build $SOLUTION -p:configuration=release -v:n')
+           
             }
         }
 	stage('Test') {
