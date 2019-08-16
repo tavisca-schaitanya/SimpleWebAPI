@@ -1,0 +1,15 @@
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\bin\Debug\netcoreapp2.1\SimpleCoreWebAPI.deps.json
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\bin\Debug\netcoreapp2.1\SimpleCoreWebAPI.runtimeconfig.json
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\bin\Debug\netcoreapp2.1\SimpleCoreWebAPI.runtimeconfig.dev.json
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\bin\Debug\netcoreapp2.1\SimpleCoreWebAPI.dll
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.csprojAssemblyReference.cache
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.RazorAssemblyInfo.cache
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.RazorAssemblyInfo.cs
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.AssemblyInfoInputs.cache
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.AssemblyInfo.cs
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\bin\Debug\netcoreapp2.1\SimpleCoreWebAPI.pdb
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.dll
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\SimpleCoreWebAPI.pdb
+C:\Users\achaitanya\source\repos\SimpleCoreWebAPI\SimpleCoreWebAPI\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
